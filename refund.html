@@ -1,0 +1,81 @@
+<!-- refund.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - Balancio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="glass">
+            <div class="container">
+                <a href="index.html" class="logo">Balancio</a>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#features">Features/Pricing</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="refund.html">Refund</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section glass">
+            <div class="container">
+                <h1>Refund Policy</h1>
+                <p>All payments are non-refundable under normal circumstances.</p>
+                <p>Refunds are considered only for payment issues (failed, duplicate, or incorrect charges via Paddle/Google Pay/Apple Pay) or network/download/installation issues.</p>
+                <p>Refunds require proof of purchase (receipt or transaction ID).</p>
+
+                <h2>Refund Request Form</h2>
+                <form id="refund-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="transaction-id">Paddle Transaction ID/Receipt:</label>
+                    <input type="text" id="transaction-id" required>
+
+                    <label for="issue">Issue Description:</label>
+                    <textarea id="issue" required></textarea>
+
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+
+                <div id="success-message" style="display: none;">
+                    <p>Your refund request has been submitted. We will review it and get back to you via email.</p>
+                </div>
+
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="container">
+            <p>&copy; 2026 Balancio. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="refund.html">Refund Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('refund-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('refund-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
