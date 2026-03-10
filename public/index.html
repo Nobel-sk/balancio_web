@@ -1,89 +1,193 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balancio — See Your Money Clearly</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.7.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.7.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<header>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Balan<span>cio</span></a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="refund.html">Refund</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-eyebrow">Personal Finance for the Next Generation</div>
+            <h1>See Your Money<br><em>Clearly.</em></h1>
+            <p class="hero-sub">
+                Built for teenagers, students, and young adults who want to take
+                control of their spending — before bad habits form.
+            </p>
+            <div class="hero-actions">
+                <a href="#features" class="btn btn-primary">See Plans &amp; Features</a>
+                <a href="#about" class="btn btn-ghost">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="fade-up">
+                    <p class="section-tag">About</p>
+                    <h2>Built for students,<br>not spreadsheets</h2>
+                    <p>
+                        Balancio is a personal finance app designed for teenagers,
+                        students, and university students who want to understand their
+                        money without the complexity of traditional finance tools.
+                        Track spending, set budgets, and build habits that last — all
+                        from your phone.
+                    </p>
+                </div>
+                <div class="about-stats fade-up-1">
+                    <div class="stat-card">
+                        <div class="stat-number">5<span>+</span></div>
+                        <div class="stat-label">Expense categories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2<span>×</span></div>
+                        <div class="stat-label">Faster than spreadsheets</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">☁️</div>
+                        <div class="stat-label">Cloud-synced &amp; secure</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3<span>days</span></div>
+                        <div class="stat-label">Free trial to start</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Features & Pricing -->
+    <section id="features" class="section">
+        <div class="container">
+            <p class="section-tag fade-up">Features &amp; Pricing</p>
+            <h2 class="fade-up-1">Everything you need.<br>Nothing you don't.</h2>
+
+            <div class="features-grid">
+                <div class="feature-item fade-up">
+                    <div class="feature-dot"></div>
+                    <p>Categorize expenses easily</p>
+                </div>
+                <div class="feature-item fade-up-1">
+                    <div class="feature-dot"></div>
+                    <p>View balances at a glance</p>
+                </div>
+                <div class="feature-item fade-up-2">
+                    <div class="feature-dot"></div>
+                    <p>Light &amp; dark theme support</p>
+                </div>
+                <div class="feature-item fade-up-3">
+                    <div class="feature-dot"></div>
+                    <p>Cloud storage — access your data anywhere</p>
+                </div>
+                <div class="feature-item fade-up-4">
+                    <div class="feature-dot"></div>
+                    <p>Budget challenges &amp; spending alerts</p>
+                </div>
+                <div class="feature-item fade-up">
+                    <div class="feature-dot"></div>
+                    <p>Push notifications for milestones</p>
+                </div>
+            </div>
+
+            <!-- Pricing cards -->
+            <div class="pricing-grid fade-up-1">
+                <div class="pricing-card">
+                    <p class="plan-name">Basic</p>
+                    <div class="price-amount"><sup>$</sup>4.99<span> / month</span></div>
+                    <p class="price-desc">
+                        Essential tracking tools for students getting started.
+                        Includes a 3-day free trial.
+                    </p>
+                    <p class="price-note">
+                        * Price may be lower in some countries.
+                    </p>
+                </div>
+                <div class="pricing-card pricing-card--featured">
+                    <p class="plan-name">Premium</p>
+                    <div class="price-amount"><sup>$</sup>9.99<span> / month</span></div>
+                    <p class="price-desc">
+                        Full access to all features including challenges,
+                        alerts, and priority support. Includes a 3-day free trial.
+                    </p>
+                    <p class="price-note">
+                        * Price may be lower in some countries.
+                    </p>
+                </div>
+            </div>
+
+            <p class="pricing-availability fade-up-2">
+                Coming soon on the App Store and Google Play❕ Subscriptions are
+                managed through the Balancio app.
+            </p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="fade-up">
+                    <p class="section-tag">Contact</p>
+                    <h2>We're here<br>to help</h2>
+                    <p>
+                        Have a question, found a bug, or want to request a refund?
+                        Drop us an email and we'll get back to you as soon as possible.
+                    </p>
+                </div>
+                <div class="fade-up-1">
+                    <a href="mailto:balanciosupport@gmail.com" class="contact-link">
+                        <div class="contact-link-icon">✉️</div>
+                        balanciosupport@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <p>&copy; 2026 Balancio. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="refund.html">Refund</a></li>
+            </ul>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
